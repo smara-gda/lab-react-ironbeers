@@ -12,7 +12,7 @@ function App() {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/beers" component={Beers} exact />
-        <Route path="/random-beer" component={RandomBeers} exact />
+        <Route path="/random-beer/:id" component={RandomBeers} exact />
         <Route path="/new-beer" component={NewBeer} exact />
         <Route path="/beer/:id" component={SingleBeer} exact />
       </Switch>
