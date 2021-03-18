@@ -5,3 +5,10 @@ export const ironBeers = async () => {
   const body = response.data;
   return body;
 };
+
+export const ironBeer = async (id) => {
+  const response = await axios.get(
+    `https://ih-beers-api2.herokuapp.com/beers/${id}`
+  );
+  return response.data;
+};
